@@ -1,0 +1,61 @@
+{
+  "anchor_selection": {
+    "selected_codebase": "s1",
+    "selection_timestamp": "2025-07-31T12:57:00Z",
+    "overall_score": 0.7341650521319639,
+    "selection_criteria": "measurable_observable_scores"
+  },
+  "scoring_breakdown": {
+    "s1": {
+      "architectural_coherence": 0.6145483193277311,
+      "refactorability": 0.792400871459695,
+      "functional_resilience": 0.7717745098039216,
+      "convergence_potential": 0.7579365079365079,
+      "overall_score": 0.7341650521319639
+    },
+    "soldier": {
+      "architectural_coherence": 0.6166031746031746,
+      "refactorability": 0.7963333333333333,
+      "functional_resilience": 0.7688333333333334,
+      "convergence_potential": 0.7204365079365079,
+      "overall_score": 0.7255515873015873
+    }
+  },
+  "score_differences": {
+    "architectural_coherence": 0.002054855275443468,
+    "refactorability": 0.003932461873638382,
+    "functional_resilience": 0.002941176470588225,
+    "convergence_potential": 0.03749999999999998,
+    "overall": 0.008613464830376616
+  },
+  "measurement_methodology": {
+    "architectural_coherence": [
+      "Module organization consistency",
+      "Import consistency and coupling patterns",
+      "Error handling consistency",
+      "Function naming and signature consistency",
+      "Complexity distribution consistency"
+    ],
+    "refactorability": [
+      "Code complexity levels",
+      "Coupling levels",
+      "Test coverage indicators",
+      "Documentation quality",
+      "Risk burden"
+    ],
+    "functional_resilience": [
+      "Error handling coverage",
+      "Input validation patterns",
+      "Dependency isolation",
+      "Fault tolerance patterns",
+      "Resource management"
+    ],
+    "convergence_potential": [
+      "Interface compatibility",
+      "Function signature compatibility",
+      "Module size similarity",
+      "Unique functionality burden",
+      "Import compatibility"
+    ]
+  }
+}

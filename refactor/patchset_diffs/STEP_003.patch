@@ -1,0 +1,21 @@
+# Patch for STEP_003: Add unique function process_directory to anchor codebase
+# Step type: add
+# Risk level: high
+# Behavioral rationale: Function process_directory provides functionality not present in anchor
+# Target module: utils.py
+# Source codebase: soldier
+
+# This patch represents add operation:
+# - Description: Add unique function process_directory to anchor codebase
+# - Risk Level: high
+# - Estimated Effort: high
+
+# Validation Criteria:
+# - Function process_directory integrates without conflicts
+# - All dependencies are properly imported
+# - Function passes integration tests
+
+# Rollback Procedure:
+# Remove added function process_directory from utils.py
+
+# Dependencies: STEP_002

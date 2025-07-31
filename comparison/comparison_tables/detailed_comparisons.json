@@ -1,0 +1,376 @@
+{
+  "utils.py": {
+    "modules": {
+      "s1": "utils.py",
+      "soldier": "utils.py"
+    },
+    "behavioral_intent_similarity": 0.045454545454545456,
+    "execution_logic_similarity": 0.8888888888888888,
+    "complexity_comparison": {
+      "s1": {
+        "function_count": 9,
+        "class_count": 1,
+        "conditional_count": 7,
+        "import_count": 10,
+        "state_mutation_count": 3,
+        "cyclomatic_complexity": 8,
+        "coupling_factor": 1.1111111111111112
+      },
+      "soldier": {
+        "function_count": 14,
+        "class_count": 2,
+        "conditional_count": 8,
+        "import_count": 13,
+        "state_mutation_count": 10,
+        "cyclomatic_complexity": 9,
+        "coupling_factor": 0.9285714285714286
+      },
+      "complexity_ratio": {
+        "function_count_ratio": 0.6428571428571429,
+        "class_count_ratio": 0.5,
+        "conditional_count_ratio": 0.875,
+        "import_count_ratio": 0.7692307692307693
+      }
+    },
+    "efficiency_analysis": {
+      "s1": {
+        "io_heavy": true,
+        "computation_heavy": false,
+        "network_dependent": false,
+        "file_operations": true,
+        "coupling_factor": 1.1111111111111112
+      },
+      "soldier": {
+        "io_heavy": true,
+        "computation_heavy": false,
+        "network_dependent": false,
+        "file_operations": true,
+        "coupling_factor": 0.9285714285714286
+      }
+    },
+    "side_effect_analysis": {
+      "s1": [
+        "file_system",
+        "object_mutation"
+      ],
+      "soldier": [
+        "file_system",
+        "object_mutation"
+      ]
+    },
+    "error_handling_comparison": {
+      "s1": {
+        "error_flows": [
+          "try_except:Exception:19",
+          "try_except:Exception:29",
+          "try_except:FileNotFoundError:39",
+          "try_except:json.JSONDecodeError:42",
+          "try_except:Exception:45",
+          "try_except:Exception:57",
+          "try_except:Exception:92"
+        ],
+        "error_coverage": true
+      },
+      "soldier": {
+        "error_flows": [
+          "try_except:Exception:50",
+          "try_except:Exception:59",
+          "try_except:FileNotFoundError:69",
+          "try_except:Exception:72",
+          "try_except:Exception:84",
+          "try_except:Exception:107",
+          "try_except:Exception:124",
+          "try_except:Exception:30"
+        ],
+        "error_coverage": true
+      }
+    },
+    "interface_compatibility": {
+      "common_functions": 1,
+      "total_s1_functions": 9,
+      "total_soldier_functions": 14,
+      "interface_overlap": 0.07142857142857142,
+      "signature_compatibility": [
+        {
+          "function": "__init__",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 2,
+          "soldier_params": 2
+        }
+      ]
+    },
+    "functional_divergence": {
+      "s1_unique_functions": [
+        "_process_dict",
+        "_process_list",
+        "validate_input",
+        "load_json_file",
+        "process_data",
+        "save_json_file",
+        "ensure_directory",
+        "calculate_file_hash"
+      ],
+      "soldier_unique_functions": [
+        "decorator",
+        "validate_config",
+        "process_directory",
+        "read_file_safely",
+        "analyze_file",
+        "calculate_checksum",
+        "validate_file_path",
+        "wrapper",
+        "create_directory",
+        "retry",
+        "validate_api_key",
+        "setup_logging",
+        "write_file_safely"
+      ],
+      "s1_unique_count": 8,
+      "soldier_unique_count": 13,
+      "divergence_ratio": 1.5
+    }
+  },
+  "cli.py": {
+    "modules": {
+      "s1": "cli.py",
+      "soldier": "cli.py"
+    },
+    "behavioral_intent_similarity": 0.5714285714285714,
+    "execution_logic_similarity": 1.0,
+    "complexity_comparison": {
+      "s1": {
+        "function_count": 4,
+        "class_count": 1,
+        "conditional_count": 2,
+        "import_count": 5,
+        "state_mutation_count": 4,
+        "cyclomatic_complexity": 3,
+        "coupling_factor": 1.25
+      },
+      "soldier": {
+        "function_count": 7,
+        "class_count": 1,
+        "conditional_count": 2,
+        "import_count": 7,
+        "state_mutation_count": 6,
+        "cyclomatic_complexity": 3,
+        "coupling_factor": 1.0
+      },
+      "complexity_ratio": {
+        "function_count_ratio": 0.5714285714285714,
+        "class_count_ratio": 1.0,
+        "conditional_count_ratio": 1.0,
+        "import_count_ratio": 0.7142857142857143
+      }
+    },
+    "efficiency_analysis": {
+      "s1": {
+        "io_heavy": true,
+        "computation_heavy": false,
+        "network_dependent": false,
+        "file_operations": false,
+        "coupling_factor": 1.25
+      },
+      "soldier": {
+        "io_heavy": true,
+        "computation_heavy": false,
+        "network_dependent": false,
+        "file_operations": false,
+        "coupling_factor": 1.0
+      }
+    },
+    "side_effect_analysis": {
+      "s1": [
+        "object_mutation"
+      ],
+      "soldier": [
+        "object_mutation"
+      ]
+    },
+    "error_handling_comparison": {
+      "s1": {
+        "error_flows": [
+          "try_except:Exception:32"
+        ],
+        "error_coverage": true
+      },
+      "soldier": {
+        "error_flows": [
+          "try_except:KeyboardInterrupt:54",
+          "try_except:Exception:57"
+        ],
+        "error_coverage": true
+      }
+    },
+    "interface_compatibility": {
+      "common_functions": 4,
+      "total_s1_functions": 4,
+      "total_soldier_functions": 7,
+      "interface_overlap": 0.5714285714285714,
+      "signature_compatibility": [
+        {
+          "function": "main",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 0,
+          "soldier_params": 0
+        },
+        {
+          "function": "__init__",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 1,
+          "soldier_params": 1
+        },
+        {
+          "function": "parse_args",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 2,
+          "soldier_params": 2
+        },
+        {
+          "function": "run",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 2,
+          "soldier_params": 2
+        }
+      ]
+    },
+    "functional_divergence": {
+      "s1_unique_functions": [],
+      "soldier_unique_functions": [
+        "status_command",
+        "stop_command",
+        "start_command"
+      ],
+      "s1_unique_count": 0,
+      "soldier_unique_count": 3,
+      "divergence_ratio": 0.42857142857142855
+    }
+  },
+  "config.py": {
+    "modules": {
+      "s1": "config.py",
+      "soldier": "config.py"
+    },
+    "behavioral_intent_similarity": 0.5714285714285714,
+    "execution_logic_similarity": 0.4,
+    "complexity_comparison": {
+      "s1": {
+        "function_count": 4,
+        "class_count": 3,
+        "conditional_count": 3,
+        "import_count": 6,
+        "state_mutation_count": 13,
+        "cyclomatic_complexity": 4,
+        "coupling_factor": 1.5
+      },
+      "soldier": {
+        "function_count": 7,
+        "class_count": 3,
+        "conditional_count": 9,
+        "import_count": 8,
+        "state_mutation_count": 15,
+        "cyclomatic_complexity": 10,
+        "coupling_factor": 1.1428571428571428
+      },
+      "complexity_ratio": {
+        "function_count_ratio": 0.5714285714285714,
+        "class_count_ratio": 1.0,
+        "conditional_count_ratio": 0.3333333333333333,
+        "import_count_ratio": 0.75
+      }
+    },
+    "efficiency_analysis": {
+      "s1": {
+        "io_heavy": true,
+        "computation_heavy": false,
+        "network_dependent": false,
+        "file_operations": true,
+        "coupling_factor": 1.5
+      },
+      "soldier": {
+        "io_heavy": true,
+        "computation_heavy": false,
+        "network_dependent": false,
+        "file_operations": true,
+        "coupling_factor": 1.1428571428571428
+      }
+    },
+    "side_effect_analysis": {
+      "s1": [
+        "file_system",
+        "object_mutation"
+      ],
+      "soldier": [
+        "file_system",
+        "object_mutation"
+      ]
+    },
+    "error_handling_comparison": {
+      "s1": {
+        "error_flows": [
+          "try_except:Exception:45"
+        ],
+        "error_coverage": true
+      },
+      "soldier": {
+        "error_flows": [
+          "try_except:Exception:49",
+          "try_except:ValueError:97"
+        ],
+        "error_coverage": true
+      }
+    },
+    "interface_compatibility": {
+      "common_functions": 4,
+      "total_s1_functions": 4,
+      "total_soldier_functions": 7,
+      "interface_overlap": 0.5714285714285714,
+      "signature_compatibility": [
+        {
+          "function": "save_config",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 2,
+          "soldier_params": 2
+        },
+        {
+          "function": "_parse_config",
+          "parameter_count_match": true,
+          "return_type_match": false,
+          "s1_params": 2,
+          "soldier_params": 2
+        },
+        {
+          "function": "__init__",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 2,
+          "soldier_params": 2
+        },
+        {
+          "function": "load_config",
+          "parameter_count_match": true,
+          "return_type_match": false,
+          "s1_params": 1,
+          "soldier_params": 1
+        }
+      ]
+    },
+    "functional_divergence": {
+      "s1_unique_functions": [],
+      "soldier_unique_functions": [
+        "__post_init__",
+        "_apply_env_overrides",
+        "_load_config_file"
+      ],
+      "s1_unique_count": 0,
+      "soldier_unique_count": 3,
+      "divergence_ratio": 0.42857142857142855
+    }
+  }
+}

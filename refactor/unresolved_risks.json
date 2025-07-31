@@ -1,0 +1,370 @@
+{
+  "metadata": {
+    "created": "2025-07-31T13:00:00Z",
+    "total_risks": 179,
+    "addressed_in_refactor": 9,
+    "unresolved_count": 46
+  },
+  "unresolved_risks": {
+    "critical": [],
+    "high": [
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function __post_init__ receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function __init__ receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function __init__ receives wrong type for parameter config_file",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function load_config receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function _load_config_file receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function _parse_config receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function _parse_config receives wrong type for parameter data",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function _apply_env_overrides receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function save_config receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "wrong_type_parameter",
+        "description": "Function save_config receives wrong type for parameter config",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "system_dependency",
+        "description": "Conditional depends on system state: os.path.exists(self.config_file)",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "system_dependency",
+        "description": "Conditional depends on system state: os.getenv('SOLDIER_DEBUG')",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_config.py",
+        "type": "system_dependency",
+        "description": "Conditional depends on system state: os.getenv('SOLDIER_PORT')",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function __init__ receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function parse_args receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function parse_args receives wrong type for parameter args",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function start_command receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function start_command receives wrong type for parameter args",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function stop_command receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function stop_command receives wrong type for parameter args",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function status_command receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function status_command receives wrong type for parameter args",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function run receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_cli.py",
+        "type": "wrong_type_parameter",
+        "description": "Function run receives wrong type for parameter args",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function setup_logging receives wrong type for parameter level",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function retry receives wrong type for parameter times",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function retry receives wrong type for parameter delay",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function calculate_checksum receives wrong type for parameter data",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function validate_file_path receives wrong type for parameter path",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function create_directory receives wrong type for parameter path",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function create_directory receives wrong type for parameter mode",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function read_file_safely receives wrong type for parameter file_path",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function read_file_safely receives wrong type for parameter encoding",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function write_file_safely receives wrong type for parameter file_path",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function write_file_safely receives wrong type for parameter content",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function write_file_safely receives wrong type for parameter encoding",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function decorator receives wrong type for parameter func",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function __init__ receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function __init__ receives wrong type for parameter logger",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function process_directory receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function process_directory receives wrong type for parameter directory",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function process_directory receives wrong type for parameter pattern",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function analyze_file receives wrong type for parameter self",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function analyze_file receives wrong type for parameter file_path",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function validate_config receives wrong type for parameter config",
+        "category": "edge_case",
+        "severity": "high"
+      },
+      {
+        "module": "soldier_utils.py",
+        "type": "wrong_type_parameter",
+        "description": "Function validate_api_key receives wrong type for parameter api_key",
+        "category": "edge_case",
+        "severity": "high"
+      }
+    ],
+    "medium": []
+  },
+  "technical_debt": [
+    {
+      "area": "Performance Optimization",
+      "description": "Comprehensive performance tuning not included in convergence scope",
+      "impact": "Potential performance degradation in high-load scenarios",
+      "recommendation": "Conduct dedicated performance optimization phase post-convergence"
+    },
+    {
+      "area": "Security Hardening",
+      "description": "Security review not included in behavioral analysis",
+      "impact": "Security vulnerabilities may persist from both codebases",
+      "recommendation": "Conduct security audit and penetration testing"
+    },
+    {
+      "area": "Documentation Completeness",
+      "description": "Comprehensive documentation update beyond convergence scope",
+      "impact": "Knowledge gaps may hinder maintenance",
+      "recommendation": "Dedicated documentation sprint post-convergence"
+    }
+  ],
+  "monitoring_requirements": [
+    "Performance metrics monitoring for converged functionality",
+    "Error rate monitoring for integrated components",
+    "Resource utilization monitoring for memory and CPU usage",
+    "Dependency health monitoring for external services",
+    "User experience monitoring for interface changes"
+  ],
+  "future_work": [
+    "Microservices decomposition analysis",
+    "API versioning strategy implementation",
+    "Automated testing framework enhancement",
+    "Monitoring and observability platform integration",
+    "Performance optimization and caching strategy"
+  ]
+}

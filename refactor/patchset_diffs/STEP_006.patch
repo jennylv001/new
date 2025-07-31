@@ -1,0 +1,21 @@
+# Patch for STEP_006: Add unique function start_command to anchor codebase
+# Step type: add
+# Risk level: high
+# Behavioral rationale: Function start_command provides functionality not present in anchor
+# Target module: cli.py
+# Source codebase: soldier
+
+# This patch represents add operation:
+# - Description: Add unique function start_command to anchor codebase
+# - Risk Level: high
+# - Estimated Effort: high
+
+# Validation Criteria:
+# - Function start_command integrates without conflicts
+# - All dependencies are properly imported
+# - Function passes integration tests
+
+# Rollback Procedure:
+# Remove added function start_command from cli.py
+
+# Dependencies: STEP_005

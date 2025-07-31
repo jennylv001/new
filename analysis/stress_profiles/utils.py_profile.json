@@ -1,0 +1,247 @@
+{
+  "module": "utils.py",
+  "edge_cases": [
+    {
+      "type": "null_parameter",
+      "description": "Function calculate_file_hash receives None for parameter file_path",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function calculate_file_hash receives wrong type for parameter file_path",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function ensure_directory receives None for parameter path",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function ensure_directory receives wrong type for parameter path",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function load_json_file receives None for parameter file_path",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function load_json_file receives wrong type for parameter file_path",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function save_json_file receives None for parameter data",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function save_json_file receives wrong type for parameter data",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function save_json_file receives None for parameter file_path",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function save_json_file receives wrong type for parameter file_path",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter self",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter self",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter config",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter config",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "untyped_return",
+      "description": "Function __init__ has no return type annotation",
+      "severity": "medium",
+      "impact": "type_ambiguity"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function validate_input receives None for parameter self",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function validate_input receives wrong type for parameter self",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function validate_input receives None for parameter data",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function validate_input receives wrong type for parameter data",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function process_data receives None for parameter self",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function process_data receives wrong type for parameter self",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function process_data receives None for parameter data",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function process_data receives wrong type for parameter data",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function _process_dict receives None for parameter self",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function _process_dict receives wrong type for parameter self",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function _process_dict receives None for parameter data",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function _process_dict receives wrong type for parameter data",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function _process_list receives None for parameter self",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function _process_list receives wrong type for parameter self",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function _process_list receives None for parameter data",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function _process_list receives wrong type for parameter data",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 70 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 82 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    }
+  ],
+  "failure_scenarios": [],
+  "resource_strain": {
+    "memory_strain": {
+      "risk_factors": [],
+      "risk_score": 0.0,
+      "mitigation_strategies": [
+        "Implement memory profiling",
+        "Use generators for large datasets",
+        "Implement object pooling"
+      ]
+    },
+    "cpu_strain": {
+      "risk_factors": [],
+      "risk_score": 0.0,
+      "mitigation_strategies": [
+        "Implement CPU profiling",
+        "Use caching for expensive operations",
+        "Consider algorithm optimization"
+      ]
+    },
+    "io_strain": {
+      "risk_factors": [
+        "File I/O operations: 4 imports"
+      ],
+      "risk_score": 0.3,
+      "mitigation_strategies": [
+        "Implement I/O timeout handling",
+        "Use connection pooling",
+        "Implement retry mechanisms"
+      ]
+    },
+    "network_strain": {
+      "risk_factors": [],
+      "risk_score": 0.0,
+      "mitigation_strategies": [
+        "Implement circuit breakers",
+        "Add network timeout handling",
+        "Implement exponential backoff"
+      ]
+    },
+    "overall_strain_score": 0.075,
+    "strain_level": "minimal"
+  },
+  "risk_score": 10.0
+}

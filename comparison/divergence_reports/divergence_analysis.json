@@ -1,0 +1,12 @@
+{
+  "analysis_summary": {
+    "total_s1_modules": 3,
+    "total_soldier_modules": 3,
+    "paired_modules": 3,
+    "s1_orphans": 0,
+    "soldier_orphans": 0
+  },
+  "s1_orphaned_modules": {},
+  "soldier_orphaned_modules": {},
+  "auxiliary_functionality": []
+}
