@@ -1,0 +1,13 @@
+codebase,module,line_number,type,description,risk_level
+s1,config.py,31,input_form,Function __init__ assumes parameter types without validation,medium
+s1,config.py,40,io_condition,Conditional assumes system state: os.path.exists(self.config_file),medium
+s1,cli.py,12,input_form,Function __init__ assumes parameter types without validation,medium
+s1,utils.py,65,input_form,Function __init__ assumes parameter types without validation,medium
+soldier,config.py,28,input_form,Function __post_init__ assumes parameter types without validation,medium
+soldier,config.py,36,input_form,Function __init__ assumes parameter types without validation,medium
+soldier,config.py,45,io_condition,Conditional assumes system state: os.path.exists(self.config_file),medium
+soldier,config.py,91,io_condition,Conditional assumes system state: os.getenv('SOLDIER_DEBUG'),medium
+soldier,config.py,94,io_condition,Conditional assumes system state: os.getenv('SOLDIER_PORT'),medium
+soldier,cli.py,12,input_form,Function __init__ assumes parameter types without validation,medium
+soldier,utils.py,22,input_form,Function retry assumes parameter types without validation,medium
+soldier,utils.py,92,input_form,Function __init__ assumes parameter types without validation,medium

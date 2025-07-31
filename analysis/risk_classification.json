@@ -1,0 +1,1274 @@
+{
+  "critical_risks": [],
+  "high_risks": [
+    {
+      "module": "config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter config_file",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function load_config receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _parse_config receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _parse_config receives wrong type for parameter data",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function save_config receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function save_config receives wrong type for parameter config",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "config.py",
+      "type": "system_dependency",
+      "description": "Conditional depends on system state: os.path.exists(self.config_file)",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function parse_args receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function parse_args receives wrong type for parameter args",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function run receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function run receives wrong type for parameter args",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function calculate_file_hash receives wrong type for parameter file_path",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function ensure_directory receives wrong type for parameter path",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function load_json_file receives wrong type for parameter file_path",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function save_json_file receives wrong type for parameter data",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function save_json_file receives wrong type for parameter file_path",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter config",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function validate_input receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function validate_input receives wrong type for parameter data",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function process_data receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function process_data receives wrong type for parameter data",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _process_dict receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _process_dict receives wrong type for parameter data",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _process_list receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _process_list receives wrong type for parameter data",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __post_init__ receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter config_file",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function load_config receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _load_config_file receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _parse_config receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _parse_config receives wrong type for parameter data",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function _apply_env_overrides receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function save_config receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "wrong_type_parameter",
+      "description": "Function save_config receives wrong type for parameter config",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "system_dependency",
+      "description": "Conditional depends on system state: os.path.exists(self.config_file)",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "system_dependency",
+      "description": "Conditional depends on system state: os.getenv('SOLDIER_DEBUG')",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "system_dependency",
+      "description": "Conditional depends on system state: os.getenv('SOLDIER_PORT')",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function parse_args receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function parse_args receives wrong type for parameter args",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function start_command receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function start_command receives wrong type for parameter args",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function stop_command receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function stop_command receives wrong type for parameter args",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function status_command receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function status_command receives wrong type for parameter args",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function run receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "wrong_type_parameter",
+      "description": "Function run receives wrong type for parameter args",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function setup_logging receives wrong type for parameter level",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function retry receives wrong type for parameter times",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function retry receives wrong type for parameter delay",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function calculate_checksum receives wrong type for parameter data",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function validate_file_path receives wrong type for parameter path",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function create_directory receives wrong type for parameter path",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function create_directory receives wrong type for parameter mode",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function read_file_safely receives wrong type for parameter file_path",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function read_file_safely receives wrong type for parameter encoding",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function write_file_safely receives wrong type for parameter file_path",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function write_file_safely receives wrong type for parameter content",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function write_file_safely receives wrong type for parameter encoding",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function decorator receives wrong type for parameter func",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter logger",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function process_directory receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function process_directory receives wrong type for parameter directory",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function process_directory receives wrong type for parameter pattern",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function analyze_file receives wrong type for parameter self",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function analyze_file receives wrong type for parameter file_path",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function validate_config receives wrong type for parameter config",
+      "category": "edge_case",
+      "severity": "high"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "wrong_type_parameter",
+      "description": "Function validate_api_key receives wrong type for parameter api_key",
+      "category": "edge_case",
+      "severity": "high"
+    }
+  ],
+  "medium_risks": [
+    {
+      "module": "config.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter config_file",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "untyped_return",
+      "description": "Function __init__ has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "null_parameter",
+      "description": "Function load_config receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "null_parameter",
+      "description": "Function _parse_config receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "null_parameter",
+      "description": "Function _parse_config receives None for parameter data",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "null_parameter",
+      "description": "Function save_config receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "null_parameter",
+      "description": "Function save_config receives None for parameter config",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 37 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 56 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "cli.py",
+      "type": "untyped_return",
+      "description": "Function main has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "cli.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "cli.py",
+      "type": "untyped_return",
+      "description": "Function __init__ has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "cli.py",
+      "type": "null_parameter",
+      "description": "Function parse_args receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "cli.py",
+      "type": "null_parameter",
+      "description": "Function parse_args receives None for parameter args",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "cli.py",
+      "type": "null_parameter",
+      "description": "Function run receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "cli.py",
+      "type": "null_parameter",
+      "description": "Function run receives None for parameter args",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "cli.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 43 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "cli.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 26 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function calculate_file_hash receives None for parameter file_path",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function ensure_directory receives None for parameter path",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function load_json_file receives None for parameter file_path",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function save_json_file receives None for parameter data",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function save_json_file receives None for parameter file_path",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter config",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "untyped_return",
+      "description": "Function __init__ has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function validate_input receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function validate_input receives None for parameter data",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function process_data receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function process_data receives None for parameter data",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function _process_dict receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function _process_dict receives None for parameter data",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function _process_list receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "null_parameter",
+      "description": "Function _process_list receives None for parameter data",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 70 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 82 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function __post_init__ receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "untyped_return",
+      "description": "Function __post_init__ has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter config_file",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "untyped_return",
+      "description": "Function __init__ has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function load_config receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function _load_config_file receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function _parse_config receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function _parse_config receives None for parameter data",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function _apply_env_overrides receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function save_config receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "null_parameter",
+      "description": "Function save_config receives None for parameter config",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 29 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 42 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 71 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 88 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 91 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 94 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "untyped_return",
+      "description": "Function main has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "untyped_return",
+      "description": "Function __init__ has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function parse_args receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function parse_args receives None for parameter args",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function start_command receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function start_command receives None for parameter args",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function stop_command receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function stop_command receives None for parameter args",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function status_command receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function status_command receives None for parameter args",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function run receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "null_parameter",
+      "description": "Function run receives None for parameter args",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 68 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_cli.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 48 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function setup_logging receives None for parameter level",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function retry receives None for parameter times",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function retry receives None for parameter delay",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "untyped_return",
+      "description": "Function retry has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function calculate_checksum receives None for parameter data",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function validate_file_path receives None for parameter path",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function create_directory receives None for parameter path",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function create_directory receives None for parameter mode",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function read_file_safely receives None for parameter file_path",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function read_file_safely receives None for parameter encoding",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function write_file_safely receives None for parameter file_path",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function write_file_safely receives None for parameter content",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function write_file_safely receives None for parameter encoding",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function decorator receives None for parameter func",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter logger",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "untyped_return",
+      "description": "Function __init__ has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function process_directory receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function process_directory receives None for parameter directory",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function process_directory receives None for parameter pattern",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function analyze_file receives None for parameter self",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function analyze_file receives None for parameter file_path",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function validate_config receives None for parameter config",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "null_parameter",
+      "description": "Function validate_api_key receives None for parameter api_key",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "untyped_return",
+      "description": "Function wrapper has no return type annotation",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 41 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 142 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 156 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 99 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 139 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 144 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 148 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_utils.py",
+      "type": "unhandled_condition",
+      "description": "Conditional at line 31 lacks else clause",
+      "category": "edge_case",
+      "severity": "medium"
+    },
+    {
+      "module": "config.py",
+      "type": "excessive_state_mutation",
+      "description": "Module has 13 state mutations, may cause race conditions",
+      "category": "failure_scenario",
+      "severity": "medium"
+    },
+    {
+      "module": "soldier_config.py",
+      "type": "excessive_state_mutation",
+      "description": "Module has 15 state mutations, may cause race conditions",
+      "category": "failure_scenario",
+      "severity": "medium"
+    }
+  ],
+  "low_risks": [],
+  "risk_summary": {
+    "total_risks": 179,
+    "by_category": {
+      "edge_case": 177,
+      "failure_scenario": 2
+    },
+    "by_severity": {
+      "critical": 0,
+      "high": 74,
+      "medium": 105,
+      "low": 0
+    }
+  }
+}

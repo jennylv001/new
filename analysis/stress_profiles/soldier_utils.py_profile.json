@@ -1,0 +1,379 @@
+{
+  "module": "soldier_utils.py",
+  "edge_cases": [
+    {
+      "type": "null_parameter",
+      "description": "Function setup_logging receives None for parameter level",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function setup_logging receives wrong type for parameter level",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function retry receives None for parameter times",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function retry receives wrong type for parameter times",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function retry receives None for parameter delay",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function retry receives wrong type for parameter delay",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "untyped_return",
+      "description": "Function retry has no return type annotation",
+      "severity": "medium",
+      "impact": "type_ambiguity"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function calculate_checksum receives None for parameter data",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function calculate_checksum receives wrong type for parameter data",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function validate_file_path receives None for parameter path",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function validate_file_path receives wrong type for parameter path",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function create_directory receives None for parameter path",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function create_directory receives wrong type for parameter path",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function create_directory receives None for parameter mode",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function create_directory receives wrong type for parameter mode",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function read_file_safely receives None for parameter file_path",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function read_file_safely receives wrong type for parameter file_path",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function read_file_safely receives None for parameter encoding",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function read_file_safely receives wrong type for parameter encoding",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function write_file_safely receives None for parameter file_path",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function write_file_safely receives wrong type for parameter file_path",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function write_file_safely receives None for parameter content",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function write_file_safely receives wrong type for parameter content",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function write_file_safely receives None for parameter encoding",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function write_file_safely receives wrong type for parameter encoding",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function decorator receives None for parameter func",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function decorator receives wrong type for parameter func",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter self",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter self",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function __init__ receives None for parameter logger",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function __init__ receives wrong type for parameter logger",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "untyped_return",
+      "description": "Function __init__ has no return type annotation",
+      "severity": "medium",
+      "impact": "type_ambiguity"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function process_directory receives None for parameter self",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function process_directory receives wrong type for parameter self",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function process_directory receives None for parameter directory",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function process_directory receives wrong type for parameter directory",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function process_directory receives None for parameter pattern",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function process_directory receives wrong type for parameter pattern",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function analyze_file receives None for parameter self",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function analyze_file receives wrong type for parameter self",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function analyze_file receives None for parameter file_path",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function analyze_file receives wrong type for parameter file_path",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function validate_config receives None for parameter config",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function validate_config receives wrong type for parameter config",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "null_parameter",
+      "description": "Function validate_api_key receives None for parameter api_key",
+      "severity": "medium",
+      "impact": "function_failure"
+    },
+    {
+      "type": "wrong_type_parameter",
+      "description": "Function validate_api_key receives wrong type for parameter api_key",
+      "severity": "high",
+      "impact": "type_error"
+    },
+    {
+      "type": "untyped_return",
+      "description": "Function wrapper has no return type annotation",
+      "severity": "medium",
+      "impact": "type_ambiguity"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 41 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 142 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 156 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 99 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 139 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 144 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 148 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    },
+    {
+      "type": "unhandled_condition",
+      "description": "Conditional at line 31 lacks else clause",
+      "severity": "medium",
+      "impact": "logic_gap"
+    }
+  ],
+  "failure_scenarios": [],
+  "resource_strain": {
+    "memory_strain": {
+      "risk_factors": [],
+      "risk_score": 0.0,
+      "mitigation_strategies": [
+        "Implement memory profiling",
+        "Use generators for large datasets",
+        "Implement object pooling"
+      ]
+    },
+    "cpu_strain": {
+      "risk_factors": [],
+      "risk_score": 0.0,
+      "mitigation_strategies": [
+        "Implement CPU profiling",
+        "Use caching for expensive operations",
+        "Consider algorithm optimization"
+      ]
+    },
+    "io_strain": {
+      "risk_factors": [
+        "File I/O operations: 4 imports"
+      ],
+      "risk_score": 0.3,
+      "mitigation_strategies": [
+        "Implement I/O timeout handling",
+        "Use connection pooling",
+        "Implement retry mechanisms"
+      ]
+    },
+    "network_strain": {
+      "risk_factors": [],
+      "risk_score": 0.0,
+      "mitigation_strategies": [
+        "Implement circuit breakers",
+        "Add network timeout handling",
+        "Implement exponential backoff"
+      ]
+    },
+    "overall_strain_score": 0.075,
+    "strain_level": "minimal"
+  },
+  "risk_score": 10.0
+}

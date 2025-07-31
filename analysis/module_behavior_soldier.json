@@ -1,0 +1,596 @@
+{
+  "config.py": {
+    "module_path": "/tmp/codebase_analysis/soldier/config.py",
+    "exports": [],
+    "entry_points": [],
+    "functions": [
+      {
+        "name": "__post_init__",
+        "parameters": [
+          "self"
+        ],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 28,
+        "has_docstring": false,
+        "parameter_count": 1
+      },
+      {
+        "name": "__init__",
+        "parameters": [
+          "self",
+          "config_file"
+        ],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 36,
+        "has_docstring": false,
+        "parameter_count": 2
+      },
+      {
+        "name": "load_config",
+        "parameters": [
+          "self"
+        ],
+        "return_type": "SoldierConfig",
+        "decorators": [],
+        "line_number": 40,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "_load_config_file",
+        "parameters": [
+          "self"
+        ],
+        "return_type": "Dict[str, Any]",
+        "decorators": [],
+        "line_number": 60,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "_parse_config",
+        "parameters": [
+          "self",
+          "data"
+        ],
+        "return_type": "SoldierConfig",
+        "decorators": [],
+        "line_number": 68,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "_apply_env_overrides",
+        "parameters": [
+          "self"
+        ],
+        "return_type": "None",
+        "decorators": [],
+        "line_number": 86,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "save_config",
+        "parameters": [
+          "self",
+          "config"
+        ],
+        "return_type": "None",
+        "decorators": [],
+        "line_number": 100,
+        "has_docstring": true,
+        "parameter_count": 2
+      }
+    ],
+    "classes": [
+      "ServerConfig",
+      "SoldierConfig",
+      "ConfigLoader"
+    ],
+    "imports": [
+      "os",
+      "json",
+      "yaml",
+      "typing.Dict",
+      "typing.Any",
+      "typing.Optional",
+      "typing.Union",
+      "dataclasses.dataclass"
+    ],
+    "state_mutations": [
+      "attr_assign:self.config_file",
+      "assign:server_config",
+      "assign:data",
+      "attr_assign:self.features",
+      "attr_assign:self._config",
+      "assign:server_data",
+      "attr_assign:server_config.host",
+      "attr_assign:server_config.port",
+      "attr_assign:server_config.workers",
+      "attr_assign:server_config.timeout",
+      "attr_assign:self._config.debug",
+      "assign:data",
+      "attr_assign:self._config",
+      "attr_assign:self._config.server.port",
+      "attr_assign:self._config"
+    ],
+    "conditionals": [
+      {
+        "line": 29,
+        "condition": "self.features is None",
+        "has_else": false
+      },
+      {
+        "line": 42,
+        "condition": "self._config is not None",
+        "has_else": false
+      },
+      {
+        "line": 45,
+        "condition": "os.path.exists(self.config_file)",
+        "has_else": true
+      },
+      {
+        "line": 71,
+        "condition": "'server' in data",
+        "has_else": false
+      },
+      {
+        "line": 88,
+        "condition": "not self._config",
+        "has_else": false
+      },
+      {
+        "line": 91,
+        "condition": "os.getenv('SOLDIER_DEBUG')",
+        "has_else": false
+      },
+      {
+        "line": 94,
+        "condition": "os.getenv('SOLDIER_PORT')",
+        "has_else": false
+      },
+      {
+        "line": 115,
+        "condition": "self.config_file.endswith(('.yaml', '.yml'))",
+        "has_else": true
+      },
+      {
+        "line": 63,
+        "condition": "self.config_file.endswith(('.yaml', '.yml'))",
+        "has_else": true
+      }
+    ],
+    "error_flows": [
+      "try_except:Exception:49",
+      "try_except:ValueError:97"
+    ],
+    "call_chains": [],
+    "data_contracts": [],
+    "assumptions": [],
+    "complexity_metrics": {
+      "function_count": 7,
+      "class_count": 3,
+      "conditional_count": 9,
+      "import_count": 8,
+      "state_mutation_count": 15,
+      "cyclomatic_complexity": 10,
+      "coupling_factor": 1.1428571428571428
+    }
+  },
+  "cli.py": {
+    "module_path": "/tmp/codebase_analysis/soldier/cli.py",
+    "exports": [],
+    "entry_points": [
+      "main",
+      "__init__",
+      "parse_args",
+      "start_command",
+      "stop_command",
+      "status_command",
+      "run"
+    ],
+    "functions": [
+      {
+        "name": "main",
+        "parameters": [],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 62,
+        "has_docstring": true,
+        "parameter_count": 0
+      },
+      {
+        "name": "__init__",
+        "parameters": [
+          "self"
+        ],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 12,
+        "has_docstring": false,
+        "parameter_count": 1
+      },
+      {
+        "name": "parse_args",
+        "parameters": [
+          "self",
+          "args"
+        ],
+        "return_type": "argparse.Namespace",
+        "decorators": [],
+        "line_number": 20,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "start_command",
+        "parameters": [
+          "self",
+          "args"
+        ],
+        "return_type": "int",
+        "decorators": [],
+        "line_number": 29,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "stop_command",
+        "parameters": [
+          "self",
+          "args"
+        ],
+        "return_type": "int",
+        "decorators": [],
+        "line_number": 34,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "status_command",
+        "parameters": [
+          "self",
+          "args"
+        ],
+        "return_type": "int",
+        "decorators": [],
+        "line_number": 39,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "run",
+        "parameters": [
+          "self",
+          "args"
+        ],
+        "return_type": "int",
+        "decorators": [],
+        "line_number": 44,
+        "has_docstring": true,
+        "parameter_count": 2
+      }
+    ],
+    "classes": [
+      "SoldierCLI"
+    ],
+    "imports": [
+      "argparse",
+      "sys",
+      "logging",
+      "typing.Optional",
+      "typing.List",
+      "typing.Dict",
+      "typing.Any"
+    ],
+    "state_mutations": [
+      "assign:cli",
+      "attr_assign:self.logger",
+      "attr_assign:self.commands",
+      "assign:parser",
+      "assign:parsed_args",
+      "assign:command_func"
+    ],
+    "conditionals": [
+      {
+        "line": 68,
+        "condition": "__name__ == '__main__'",
+        "has_else": false
+      },
+      {
+        "line": 48,
+        "condition": "parsed_args.verbose",
+        "has_else": false
+      }
+    ],
+    "error_flows": [
+      "try_except:KeyboardInterrupt:54",
+      "try_except:Exception:57"
+    ],
+    "call_chains": [],
+    "data_contracts": [],
+    "assumptions": [],
+    "complexity_metrics": {
+      "function_count": 7,
+      "class_count": 1,
+      "conditional_count": 2,
+      "import_count": 7,
+      "state_mutation_count": 6,
+      "cyclomatic_complexity": 3,
+      "coupling_factor": 1.0
+    }
+  },
+  "utils.py": {
+    "module_path": "/tmp/codebase_analysis/soldier/utils.py",
+    "exports": [],
+    "entry_points": [],
+    "functions": [
+      {
+        "name": "setup_logging",
+        "parameters": [
+          "level"
+        ],
+        "return_type": "logging.Logger",
+        "decorators": [],
+        "line_number": 13,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "retry",
+        "parameters": [
+          "times",
+          "delay"
+        ],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 22,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "calculate_checksum",
+        "parameters": [
+          "data"
+        ],
+        "return_type": "str",
+        "decorators": [],
+        "line_number": 39,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "validate_file_path",
+        "parameters": [
+          "path"
+        ],
+        "return_type": "bool",
+        "decorators": [],
+        "line_number": 46,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "create_directory",
+        "parameters": [
+          "path",
+          "mode"
+        ],
+        "return_type": "bool",
+        "decorators": [],
+        "line_number": 54,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "read_file_safely",
+        "parameters": [
+          "file_path",
+          "encoding"
+        ],
+        "return_type": "Optional[str]",
+        "decorators": [],
+        "line_number": 64,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "write_file_safely",
+        "parameters": [
+          "file_path",
+          "content",
+          "encoding"
+        ],
+        "return_type": "bool",
+        "decorators": [],
+        "line_number": 77,
+        "has_docstring": true,
+        "parameter_count": 3
+      },
+      {
+        "name": "decorator",
+        "parameters": [
+          "func"
+        ],
+        "return_type": "Callable",
+        "decorators": [],
+        "line_number": 24,
+        "has_docstring": false,
+        "parameter_count": 1
+      },
+      {
+        "name": "__init__",
+        "parameters": [
+          "self",
+          "logger"
+        ],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 92,
+        "has_docstring": false,
+        "parameter_count": 2
+      },
+      {
+        "name": "process_directory",
+        "parameters": [
+          "self",
+          "directory",
+          "pattern"
+        ],
+        "return_type": "List[str]",
+        "decorators": [],
+        "line_number": 95,
+        "has_docstring": true,
+        "parameter_count": 3
+      },
+      {
+        "name": "analyze_file",
+        "parameters": [
+          "self",
+          "file_path"
+        ],
+        "return_type": "Dict[str, Any]",
+        "decorators": [],
+        "line_number": 111,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "validate_config",
+        "parameters": [
+          "config"
+        ],
+        "return_type": "List[str]",
+        "decorators": [
+          "staticmethod"
+        ],
+        "line_number": 133,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "validate_api_key",
+        "parameters": [
+          "api_key"
+        ],
+        "return_type": "bool",
+        "decorators": [
+          "staticmethod"
+        ],
+        "line_number": 154,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "wrapper",
+        "parameters": [],
+        "return_type": null,
+        "decorators": [
+          "wraps(func)"
+        ],
+        "line_number": 26,
+        "has_docstring": false,
+        "parameter_count": 0
+      }
+    ],
+    "classes": [
+      "FileProcessor",
+      "DataValidator"
+    ],
+    "imports": [
+      "os",
+      "sys",
+      "hashlib",
+      "json",
+      "logging",
+      "typing.Any",
+      "typing.Dict",
+      "typing.List",
+      "typing.Optional",
+      "typing.Union",
+      "typing.Callable",
+      "pathlib.Path",
+      "functools.wraps"
+    ],
+    "state_mutations": [
+      "assign:data",
+      "attr_assign:self.logger",
+      "assign:errors",
+      "assign:required_fields",
+      "assign:path",
+      "assign:files",
+      "assign:stat",
+      "assign:content",
+      "assign:server_config",
+      "assign:port"
+    ],
+    "conditionals": [
+      {
+        "line": 41,
+        "condition": "isinstance(data, str)",
+        "has_else": false
+      },
+      {
+        "line": 142,
+        "condition": "'server' in config",
+        "has_else": false
+      },
+      {
+        "line": 156,
+        "condition": "not api_key",
+        "has_else": false
+      },
+      {
+        "line": 99,
+        "condition": "not path.exists()",
+        "has_else": false
+      },
+      {
+        "line": 139,
+        "condition": "field not in config",
+        "has_else": false
+      },
+      {
+        "line": 144,
+        "condition": "not isinstance(server_config.get('port'), int)",
+        "has_else": false
+      },
+      {
+        "line": 148,
+        "condition": "not 1 <= port <= 65535",
+        "has_else": false
+      },
+      {
+        "line": 31,
+        "condition": "attempt == times - 1",
+        "has_else": false
+      }
+    ],
+    "error_flows": [
+      "try_except:Exception:50",
+      "try_except:Exception:59",
+      "try_except:FileNotFoundError:69",
+      "try_except:Exception:72",
+      "try_except:Exception:84",
+      "try_except:Exception:107",
+      "try_except:Exception:124",
+      "try_except:Exception:30"
+    ],
+    "call_chains": [],
+    "data_contracts": [],
+    "assumptions": [],
+    "complexity_metrics": {
+      "function_count": 14,
+      "class_count": 2,
+      "conditional_count": 8,
+      "import_count": 13,
+      "state_mutation_count": 10,
+      "cyclomatic_complexity": 9,
+      "coupling_factor": 0.9285714285714286
+    }
+  }
+}

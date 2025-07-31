@@ -1,0 +1,405 @@
+{
+  "config.py": {
+    "module_path": "/tmp/codebase_analysis/s1/config.py",
+    "exports": [],
+    "entry_points": [],
+    "functions": [
+      {
+        "name": "__init__",
+        "parameters": [
+          "self",
+          "config_file"
+        ],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 31,
+        "has_docstring": false,
+        "parameter_count": 2
+      },
+      {
+        "name": "load_config",
+        "parameters": [
+          "self"
+        ],
+        "return_type": "S1Config",
+        "decorators": [],
+        "line_number": 35,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "_parse_config",
+        "parameters": [
+          "self",
+          "data"
+        ],
+        "return_type": "S1Config",
+        "decorators": [],
+        "line_number": 53,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "save_config",
+        "parameters": [
+          "self",
+          "config"
+        ],
+        "return_type": "None",
+        "decorators": [],
+        "line_number": 71,
+        "has_docstring": true,
+        "parameter_count": 2
+      }
+    ],
+    "classes": [
+      "DatabaseConfig",
+      "S1Config",
+      "ConfigManager"
+    ],
+    "imports": [
+      "os",
+      "json",
+      "typing.Dict",
+      "typing.Any",
+      "typing.Optional",
+      "dataclasses.dataclass"
+    ],
+    "state_mutations": [
+      "attr_assign:self.config_file",
+      "assign:db_config",
+      "assign:data",
+      "attr_assign:self._config",
+      "assign:db_data",
+      "attr_assign:db_config.host",
+      "attr_assign:db_config.port",
+      "attr_assign:db_config.username",
+      "attr_assign:db_config.password",
+      "attr_assign:db_config.database",
+      "attr_assign:self._config",
+      "assign:data",
+      "attr_assign:self._config"
+    ],
+    "conditionals": [
+      {
+        "line": 37,
+        "condition": "self._config is not None",
+        "has_else": false
+      },
+      {
+        "line": 40,
+        "condition": "os.path.exists(self.config_file)",
+        "has_else": true
+      },
+      {
+        "line": 56,
+        "condition": "'database' in data",
+        "has_else": false
+      }
+    ],
+    "error_flows": [
+      "try_except:Exception:45"
+    ],
+    "call_chains": [],
+    "data_contracts": [],
+    "assumptions": [],
+    "complexity_metrics": {
+      "function_count": 4,
+      "class_count": 3,
+      "conditional_count": 3,
+      "import_count": 6,
+      "state_mutation_count": 13,
+      "cyclomatic_complexity": 4,
+      "coupling_factor": 1.5
+    }
+  },
+  "cli.py": {
+    "module_path": "/tmp/codebase_analysis/s1/cli.py",
+    "exports": [],
+    "entry_points": [
+      "main",
+      "__init__",
+      "parse_args",
+      "run"
+    ],
+    "functions": [
+      {
+        "name": "main",
+        "parameters": [],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 37,
+        "has_docstring": true,
+        "parameter_count": 0
+      },
+      {
+        "name": "__init__",
+        "parameters": [
+          "self"
+        ],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 12,
+        "has_docstring": false,
+        "parameter_count": 1
+      },
+      {
+        "name": "parse_args",
+        "parameters": [
+          "self",
+          "args"
+        ],
+        "return_type": "argparse.Namespace",
+        "decorators": [],
+        "line_number": 15,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "run",
+        "parameters": [
+          "self",
+          "args"
+        ],
+        "return_type": "int",
+        "decorators": [],
+        "line_number": 22,
+        "has_docstring": true,
+        "parameter_count": 2
+      }
+    ],
+    "classes": [
+      "S1CLI"
+    ],
+    "imports": [
+      "argparse",
+      "sys",
+      "logging",
+      "typing.Optional",
+      "typing.List"
+    ],
+    "state_mutations": [
+      "assign:cli",
+      "attr_assign:self.logger",
+      "assign:parser",
+      "assign:parsed_args"
+    ],
+    "conditionals": [
+      {
+        "line": 43,
+        "condition": "__name__ == '__main__'",
+        "has_else": false
+      },
+      {
+        "line": 26,
+        "condition": "parsed_args.verbose",
+        "has_else": false
+      }
+    ],
+    "error_flows": [
+      "try_except:Exception:32"
+    ],
+    "call_chains": [],
+    "data_contracts": [],
+    "assumptions": [],
+    "complexity_metrics": {
+      "function_count": 4,
+      "class_count": 1,
+      "conditional_count": 2,
+      "import_count": 5,
+      "state_mutation_count": 4,
+      "cyclomatic_complexity": 3,
+      "coupling_factor": 1.25
+    }
+  },
+  "utils.py": {
+    "module_path": "/tmp/codebase_analysis/s1/utils.py",
+    "exports": [],
+    "entry_points": [],
+    "functions": [
+      {
+        "name": "calculate_file_hash",
+        "parameters": [
+          "file_path"
+        ],
+        "return_type": "Optional[str]",
+        "decorators": [],
+        "line_number": 11,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "ensure_directory",
+        "parameters": [
+          "path"
+        ],
+        "return_type": "bool",
+        "decorators": [],
+        "line_number": 24,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "load_json_file",
+        "parameters": [
+          "file_path"
+        ],
+        "return_type": "Optional[Dict[str, Any]]",
+        "decorators": [],
+        "line_number": 34,
+        "has_docstring": true,
+        "parameter_count": 1
+      },
+      {
+        "name": "save_json_file",
+        "parameters": [
+          "data",
+          "file_path"
+        ],
+        "return_type": "bool",
+        "decorators": [],
+        "line_number": 50,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "__init__",
+        "parameters": [
+          "self",
+          "config"
+        ],
+        "return_type": null,
+        "decorators": [],
+        "line_number": 65,
+        "has_docstring": false,
+        "parameter_count": 2
+      },
+      {
+        "name": "validate_input",
+        "parameters": [
+          "self",
+          "data"
+        ],
+        "return_type": "bool",
+        "decorators": [],
+        "line_number": 68,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "process_data",
+        "parameters": [
+          "self",
+          "data"
+        ],
+        "return_type": "Optional[Any]",
+        "decorators": [],
+        "line_number": 80,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "_process_dict",
+        "parameters": [
+          "self",
+          "data"
+        ],
+        "return_type": "Dict[str, Any]",
+        "decorators": [],
+        "line_number": 96,
+        "has_docstring": true,
+        "parameter_count": 2
+      },
+      {
+        "name": "_process_list",
+        "parameters": [
+          "self",
+          "data"
+        ],
+        "return_type": "List[Any]",
+        "decorators": [],
+        "line_number": 106,
+        "has_docstring": true,
+        "parameter_count": 2
+      }
+    ],
+    "classes": [
+      "DataProcessor"
+    ],
+    "imports": [
+      "os",
+      "sys",
+      "hashlib",
+      "json",
+      "typing.Any",
+      "typing.Dict",
+      "typing.List",
+      "typing.Optional",
+      "typing.Union",
+      "pathlib.Path"
+    ],
+    "state_mutations": [
+      "attr_assign:self.config",
+      "assign:result",
+      "assign:file_hash"
+    ],
+    "conditionals": [
+      {
+        "line": 70,
+        "condition": "data is None",
+        "has_else": false
+      },
+      {
+        "line": 73,
+        "condition": "isinstance(data, dict)",
+        "has_else": true
+      },
+      {
+        "line": 82,
+        "condition": "not self.validate_input(data)",
+        "has_else": false
+      },
+      {
+        "line": 75,
+        "condition": "isinstance(data, (list, str))",
+        "has_else": true
+      },
+      {
+        "line": 86,
+        "condition": "isinstance(data, dict)",
+        "has_else": true
+      },
+      {
+        "line": 100,
+        "condition": "isinstance(value, str)",
+        "has_else": true
+      },
+      {
+        "line": 88,
+        "condition": "isinstance(data, list)",
+        "has_else": true
+      }
+    ],
+    "error_flows": [
+      "try_except:Exception:19",
+      "try_except:Exception:29",
+      "try_except:FileNotFoundError:39",
+      "try_except:json.JSONDecodeError:42",
+      "try_except:Exception:45",
+      "try_except:Exception:57",
+      "try_except:Exception:92"
+    ],
+    "call_chains": [],
+    "data_contracts": [],
+    "assumptions": [],
+    "complexity_metrics": {
+      "function_count": 9,
+      "class_count": 1,
+      "conditional_count": 7,
+      "import_count": 10,
+      "state_mutation_count": 3,
+      "cyclomatic_complexity": 8,
+      "coupling_factor": 1.1111111111111112
+    }
+  }
+}
