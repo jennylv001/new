@@ -1,0 +1,21 @@
+# Patch for STEP_005: Add unique function stop_command to anchor codebase
+# Step type: add
+# Risk level: high
+# Behavioral rationale: Function stop_command provides functionality not present in anchor
+# Target module: cli.py
+# Source codebase: soldier
+
+# This patch represents add operation:
+# - Description: Add unique function stop_command to anchor codebase
+# - Risk Level: high
+# - Estimated Effort: high
+
+# Validation Criteria:
+# - Function stop_command integrates without conflicts
+# - All dependencies are properly imported
+# - Function passes integration tests
+
+# Rollback Procedure:
+# Remove added function stop_command from cli.py
+
+# Dependencies: STEP_004

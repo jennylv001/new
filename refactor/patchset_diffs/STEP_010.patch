@@ -1,0 +1,21 @@
+# Patch for STEP_010: Add unique function _apply_env_overrides to anchor codebase
+# Step type: add
+# Risk level: high
+# Behavioral rationale: Function _apply_env_overrides provides functionality not present in anchor
+# Target module: config.py
+# Source codebase: soldier
+
+# This patch represents add operation:
+# - Description: Add unique function _apply_env_overrides to anchor codebase
+# - Risk Level: high
+# - Estimated Effort: high
+
+# Validation Criteria:
+# - Function _apply_env_overrides integrates without conflicts
+# - All dependencies are properly imported
+# - Function passes integration tests
+
+# Rollback Procedure:
+# Remove added function _apply_env_overrides from config.py
+
+# Dependencies: STEP_009

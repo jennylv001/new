@@ -1,0 +1,436 @@
+refactor_plan:
+  metadata:
+    version: '1.0'
+    created: '2025-07-31T13:00:00Z'
+    anchor_codebase: s1
+    secondary_codebase: soldier
+    total_steps: 24
+    estimated_duration: 9-14 weeks
+  strategy:
+    convergence_approach: anchor_based_gradual_integration
+    phases:
+    - phase: 1
+      name: interface_alignment
+      description: Align function signatures and interfaces
+      estimated_duration: 2-3 weeks
+    - phase: 2
+      name: dependency_harmonization
+      description: Unify import patterns and dependencies
+      estimated_duration: 1-2 weeks
+    - phase: 3
+      name: functionality_integration
+      description: Integrate unique functionality from secondary codebase
+      estimated_duration: 3-4 weeks
+    - phase: 4
+      name: optimization_consolidation
+      description: Optimize and consolidate merged functionality
+      estimated_duration: 2-3 weeks
+    - phase: 5
+      name: validation_cleanup
+      description: Final validation and cleanup
+      estimated_duration: 1-2 weeks
+    total_estimated_duration: 9-14 weeks
+    risk_mitigation_approach: atomic_commits_with_rollback_points
+  phases:
+    phase_1:
+      name: Interface Alignment
+      description: Align function signatures and interfaces
+      estimated_duration: 2-3 weeks
+      steps:
+      - step_id: STEP_001
+        step_type: add
+        source_codebase: soldier
+        target_module: utils.py
+        source_module: utils.py
+        description: Add unique function decorator to anchor codebase
+        behavioral_rationale: Function decorator provides functionality not present
+          in anchor
+        risk_level: high
+        dependencies: []
+        rollback_procedure: Remove added function decorator from utils.py
+        validation_criteria:
+        - Function decorator integrates without conflicts
+        - All dependencies are properly imported
+        - Function passes integration tests
+        estimated_effort: high
+      - step_id: STEP_002
+        step_type: add
+        source_codebase: soldier
+        target_module: utils.py
+        source_module: utils.py
+        description: Add unique function validate_config to anchor codebase
+        behavioral_rationale: Function validate_config provides functionality not
+          present in anchor
+        risk_level: high
+        dependencies:
+        - STEP_001
+        rollback_procedure: Remove added function validate_config from utils.py
+        validation_criteria:
+        - Function validate_config integrates without conflicts
+        - All dependencies are properly imported
+        - Function passes integration tests
+        estimated_effort: high
+      - step_id: STEP_003
+        step_type: add
+        source_codebase: soldier
+        target_module: utils.py
+        source_module: utils.py
+        description: Add unique function process_directory to anchor codebase
+        behavioral_rationale: Function process_directory provides functionality not
+          present in anchor
+        risk_level: high
+        dependencies:
+        - STEP_002
+        rollback_procedure: Remove added function process_directory from utils.py
+        validation_criteria:
+        - Function process_directory integrates without conflicts
+        - All dependencies are properly imported
+        - Function passes integration tests
+        estimated_effort: high
+      - step_id: STEP_004
+        step_type: add
+        source_codebase: soldier
+        target_module: cli.py
+        source_module: cli.py
+        description: Add unique function status_command to anchor codebase
+        behavioral_rationale: Function status_command provides functionality not present
+          in anchor
+        risk_level: high
+        dependencies:
+        - STEP_003
+        rollback_procedure: Remove added function status_command from cli.py
+        validation_criteria:
+        - Function status_command integrates without conflicts
+        - All dependencies are properly imported
+        - Function passes integration tests
+        estimated_effort: high
+      - step_id: STEP_005
+        step_type: add
+        source_codebase: soldier
+        target_module: cli.py
+        source_module: cli.py
+        description: Add unique function stop_command to anchor codebase
+        behavioral_rationale: Function stop_command provides functionality not present
+          in anchor
+        risk_level: high
+        dependencies:
+        - STEP_004
+        rollback_procedure: Remove added function stop_command from cli.py
+        validation_criteria:
+        - Function stop_command integrates without conflicts
+        - All dependencies are properly imported
+        - Function passes integration tests
+        estimated_effort: high
+      - step_id: STEP_006
+        step_type: add
+        source_codebase: soldier
+        target_module: cli.py
+        source_module: cli.py
+        description: Add unique function start_command to anchor codebase
+        behavioral_rationale: Function start_command provides functionality not present
+          in anchor
+        risk_level: high
+        dependencies:
+        - STEP_005
+        rollback_procedure: Remove added function start_command from cli.py
+        validation_criteria:
+        - Function start_command integrates without conflicts
+        - All dependencies are properly imported
+        - Function passes integration tests
+        estimated_effort: high
+      - step_id: STEP_007
+        step_type: adapt
+        source_codebase: soldier
+        target_module: config.py
+        source_module: config.py
+        description: Align function signature for _parse_config
+        behavioral_rationale: Parameter count mismatch (2 vs 2) requires adaptation
+        risk_level: medium
+        dependencies: []
+        rollback_procedure: Revert config.py to previous version
+        validation_criteria:
+        - Function _parse_config accepts correct parameter count
+        - All existing tests continue to pass
+        - No breaking changes to public API
+        estimated_effort: medium
+      - step_id: STEP_008
+        step_type: adapt
+        source_codebase: soldier
+        target_module: config.py
+        source_module: config.py
+        description: Align function signature for load_config
+        behavioral_rationale: Parameter count mismatch (1 vs 1) requires adaptation
+        risk_level: medium
+        dependencies: []
+        rollback_procedure: Revert config.py to previous version
+        validation_criteria:
+        - Function load_config accepts correct parameter count
+        - All existing tests continue to pass
+        - No breaking changes to public API
+        estimated_effort: medium
+      - step_id: STEP_009
+        step_type: add
+        source_codebase: soldier
+        target_module: config.py
+        source_module: config.py
+        description: Add unique function __post_init__ to anchor codebase
+        behavioral_rationale: Function __post_init__ provides functionality not present
+          in anchor
+        risk_level: high
+        dependencies:
+        - STEP_008
+        rollback_procedure: Remove added function __post_init__ from config.py
+        validation_criteria:
+        - Function __post_init__ integrates without conflicts
+        - All dependencies are properly imported
+        - Function passes integration tests
+        estimated_effort: high
+      - step_id: STEP_010
+        step_type: add
+        source_codebase: soldier
+        target_module: config.py
+        source_module: config.py
+        description: Add unique function _apply_env_overrides to anchor codebase
+        behavioral_rationale: Function _apply_env_overrides provides functionality
+          not present in anchor
+        risk_level: high
+        dependencies:
+        - STEP_009
+        rollback_procedure: Remove added function _apply_env_overrides from config.py
+        validation_criteria:
+        - Function _apply_env_overrides integrates without conflicts
+        - All dependencies are properly imported
+        - Function passes integration tests
+        estimated_effort: high
+    phase_2:
+      name: Dependency Harmonization
+      description: Unify import patterns and dependencies
+      estimated_duration: 1-2 weeks
+      steps:
+      - step_id: STEP_011
+        step_type: add
+        source_codebase: soldier
+        target_module: config.py
+        source_module: config.py
+        description: Add unique function _load_config_file to anchor codebase
+        behavioral_rationale: Function _load_config_file provides functionality not
+          present in anchor
+        risk_level: high
+        dependencies:
+        - STEP_010
+        rollback_procedure: Remove added function _load_config_file from config.py
+        validation_criteria:
+        - Function _load_config_file integrates without conflicts
+        - All dependencies are properly imported
+        - Function passes integration tests
+        estimated_effort: high
+      - step_id: STEP_012
+        step_type: modify
+        source_codebase: both
+        target_module: all_affected_modules
+        source_module: null
+        description: 'Harmonize import conflict: typing.List vs typing.Dict'
+        behavioral_rationale: Import version conflict may cause runtime errors
+        risk_level: high
+        dependencies: []
+        rollback_procedure: Revert to original import statements
+        validation_criteria:
+        - All modules import successfully
+        - No version conflicts detected
+        - All functionality remains operational
+        estimated_effort: high
+      - step_id: STEP_013
+        step_type: modify
+        source_codebase: both
+        target_module: all_affected_modules
+        source_module: null
+        description: 'Harmonize import conflict: typing.List vs typing.Any'
+        behavioral_rationale: Import version conflict may cause runtime errors
+        risk_level: high
+        dependencies: []
+        rollback_procedure: Revert to original import statements
+        validation_criteria:
+        - All modules import successfully
+        - No version conflicts detected
+        - All functionality remains operational
+        estimated_effort: high
+      - step_id: STEP_014
+        step_type: modify
+        source_codebase: both
+        target_module: all_affected_modules
+        source_module: null
+        description: 'Harmonize import conflict: typing.List vs typing.Union'
+        behavioral_rationale: Import version conflict may cause runtime errors
+        risk_level: high
+        dependencies: []
+        rollback_procedure: Revert to original import statements
+        validation_criteria:
+        - All modules import successfully
+        - No version conflicts detected
+        - All functionality remains operational
+        estimated_effort: high
+      - step_id: STEP_015
+        step_type: modify
+        source_codebase: both
+        target_module: all_affected_modules
+        source_module: null
+        description: 'Harmonize import conflict: typing.List vs typing.Callable'
+        behavioral_rationale: Import version conflict may cause runtime errors
+        risk_level: high
+        dependencies: []
+        rollback_procedure: Revert to original import statements
+        validation_criteria:
+        - All modules import successfully
+        - No version conflicts detected
+        - All functionality remains operational
+        estimated_effort: high
+      - step_id: STEP_016
+        step_type: modify
+        source_codebase: both
+        target_module: all_affected_modules
+        source_module: null
+        description: 'Harmonize import conflict: typing.List vs typing.Optional'
+        behavioral_rationale: Import version conflict may cause runtime errors
+        risk_level: high
+        dependencies: []
+        rollback_procedure: Revert to original import statements
+        validation_criteria:
+        - All modules import successfully
+        - No version conflicts detected
+        - All functionality remains operational
+        estimated_effort: high
+      - step_id: STEP_017
+        step_type: add
+        source_codebase: soldier
+        target_module: dependency_requirements
+        source_module: null
+        description: 'Add required import: yaml'
+        behavioral_rationale: Import yaml required for secondary codebase functionality
+        risk_level: medium
+        dependencies: []
+        rollback_procedure: Remove import yaml from requirements
+        validation_criteria:
+        - Import yaml available and functional
+        - No conflicts with existing dependencies
+        estimated_effort: low
+      - step_id: STEP_018
+        step_type: add
+        source_codebase: soldier
+        target_module: dependency_requirements
+        source_module: null
+        description: 'Add required import: typing.Callable'
+        behavioral_rationale: Import typing.Callable required for secondary codebase
+          functionality
+        risk_level: medium
+        dependencies: []
+        rollback_procedure: Remove import typing.Callable from requirements
+        validation_criteria:
+        - Import typing.Callable available and functional
+        - No conflicts with existing dependencies
+        estimated_effort: low
+      - step_id: STEP_019
+        step_type: add
+        source_codebase: soldier
+        target_module: dependency_requirements
+        source_module: null
+        description: 'Add required import: functools.wraps'
+        behavioral_rationale: Import functools.wraps required for secondary codebase
+          functionality
+        risk_level: medium
+        dependencies: []
+        rollback_procedure: Remove import functools.wraps from requirements
+        validation_criteria:
+        - Import functools.wraps available and functional
+        - No conflicts with existing dependencies
+        estimated_effort: low
+      - step_id: STEP_020
+        step_type: modify
+        source_codebase: s1
+        target_module: config.py
+        source_module: null
+        description: Optimize high-risk module config.py
+        behavioral_rationale: Module has 8 high risks requiring optimization
+        risk_level: medium
+        dependencies: []
+        rollback_procedure: Revert config.py to pre-optimization state
+        validation_criteria:
+        - Risk count for config.py reduced by at least 50%
+        - Module functionality remains intact
+        - Performance impact is minimal
+        estimated_effort: high
+    phase_3:
+      name: Functionality Integration
+      description: Integrate unique functionality from secondary codebase
+      estimated_duration: 3-4 weeks
+      steps:
+      - step_id: STEP_021
+        step_type: modify
+        source_codebase: both
+        target_module: all_modules
+        source_module: null
+        description: Consolidate duplicate functionality across modules
+        behavioral_rationale: Remove redundant code patterns identified during convergence
+        risk_level: medium
+        dependencies: []
+        rollback_procedure: Restore original module implementations
+        validation_criteria:
+        - No duplicate function implementations remain
+        - All functionality accessible through unified interfaces
+        - Code coverage maintained or improved
+        estimated_effort: high
+      - step_id: STEP_022
+        step_type: add
+        source_codebase: new
+        target_module: tests/integration
+        source_module: null
+        description: Create comprehensive integration test suite
+        behavioral_rationale: Ensure convergence maintains all original functionality
+        risk_level: low
+        dependencies: []
+        rollback_procedure: Remove test suite
+        validation_criteria:
+        - All original functionality tests pass
+        - New integration points tested
+        - Performance benchmarks met
+        - No regression in error handling
+        estimated_effort: medium
+      - step_id: STEP_023
+        step_type: add
+        source_codebase: new
+        target_module: docs/convergence
+        source_module: null
+        description: Update documentation for converged codebase
+        behavioral_rationale: Document new architecture and integration points
+        risk_level: low
+        dependencies: []
+        rollback_procedure: Restore original documentation
+        validation_criteria:
+        - All new functionality documented
+        - Architecture changes explained
+        - Migration guide available
+        estimated_effort: medium
+      - step_id: STEP_024
+        step_type: add
+        source_codebase: new
+        target_module: benchmarks/performance
+        source_module: null
+        description: Validate performance characteristics of converged codebase
+        behavioral_rationale: Ensure convergence doesn't degrade performance
+        risk_level: medium
+        dependencies: []
+        rollback_procedure: Document performance regressions
+        validation_criteria:
+        - Performance within 10% of original codebases
+        - No memory leaks introduced
+        - Response times meet requirements
+        estimated_effort: medium
+    phase_4:
+      name: Optimization Consolidation
+      description: Optimize and consolidate merged functionality
+      estimated_duration: 2-3 weeks
+      steps: []
+    phase_5:
+      name: Validation Cleanup
+      description: Final validation and cleanup
+      estimated_duration: 1-2 weeks
+      steps: []

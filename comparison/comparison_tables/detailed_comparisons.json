@@ -103,32 +103,152 @@
     "functional_divergence": {
       "s1_unique_functions": [
         "_process_dict",
-        "load_json_file",
-        "ensure_directory",
         "_process_list",
         "validate_input",
+        "load_json_file",
         "process_data",
         "save_json_file",
+        "ensure_directory",
         "calculate_file_hash"
       ],
       "soldier_unique_functions": [
-        "validate_api_key",
-        "calculate_checksum",
         "decorator",
-        "process_directory",
-        "analyze_file",
-        "read_file_safely",
-        "retry",
-        "validate_file_path",
-        "write_file_safely",
-        "create_directory",
-        "setup_logging",
         "validate_config",
-        "wrapper"
+        "process_directory",
+        "read_file_safely",
+        "analyze_file",
+        "calculate_checksum",
+        "validate_file_path",
+        "wrapper",
+        "create_directory",
+        "retry",
+        "validate_api_key",
+        "setup_logging",
+        "write_file_safely"
       ],
       "s1_unique_count": 8,
       "soldier_unique_count": 13,
       "divergence_ratio": 1.5
+    }
+  },
+  "cli.py": {
+    "modules": {
+      "s1": "cli.py",
+      "soldier": "cli.py"
+    },
+    "behavioral_intent_similarity": 0.5714285714285714,
+    "execution_logic_similarity": 1.0,
+    "complexity_comparison": {
+      "s1": {
+        "function_count": 4,
+        "class_count": 1,
+        "conditional_count": 2,
+        "import_count": 5,
+        "state_mutation_count": 4,
+        "cyclomatic_complexity": 3,
+        "coupling_factor": 1.25
+      },
+      "soldier": {
+        "function_count": 7,
+        "class_count": 1,
+        "conditional_count": 2,
+        "import_count": 7,
+        "state_mutation_count": 6,
+        "cyclomatic_complexity": 3,
+        "coupling_factor": 1.0
+      },
+      "complexity_ratio": {
+        "function_count_ratio": 0.5714285714285714,
+        "class_count_ratio": 1.0,
+        "conditional_count_ratio": 1.0,
+        "import_count_ratio": 0.7142857142857143
+      }
+    },
+    "efficiency_analysis": {
+      "s1": {
+        "io_heavy": true,
+        "computation_heavy": false,
+        "network_dependent": false,
+        "file_operations": false,
+        "coupling_factor": 1.25
+      },
+      "soldier": {
+        "io_heavy": true,
+        "computation_heavy": false,
+        "network_dependent": false,
+        "file_operations": false,
+        "coupling_factor": 1.0
+      }
+    },
+    "side_effect_analysis": {
+      "s1": [
+        "object_mutation"
+      ],
+      "soldier": [
+        "object_mutation"
+      ]
+    },
+    "error_handling_comparison": {
+      "s1": {
+        "error_flows": [
+          "try_except:Exception:32"
+        ],
+        "error_coverage": true
+      },
+      "soldier": {
+        "error_flows": [
+          "try_except:KeyboardInterrupt:54",
+          "try_except:Exception:57"
+        ],
+        "error_coverage": true
+      }
+    },
+    "interface_compatibility": {
+      "common_functions": 4,
+      "total_s1_functions": 4,
+      "total_soldier_functions": 7,
+      "interface_overlap": 0.5714285714285714,
+      "signature_compatibility": [
+        {
+          "function": "main",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 0,
+          "soldier_params": 0
+        },
+        {
+          "function": "__init__",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 1,
+          "soldier_params": 1
+        },
+        {
+          "function": "parse_args",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 2,
+          "soldier_params": 2
+        },
+        {
+          "function": "run",
+          "parameter_count_match": true,
+          "return_type_match": true,
+          "s1_params": 2,
+          "soldier_params": 2
+        }
+      ]
+    },
+    "functional_divergence": {
+      "s1_unique_functions": [],
+      "soldier_unique_functions": [
+        "status_command",
+        "stop_command",
+        "start_command"
+      ],
+      "s1_unique_count": 0,
+      "soldier_unique_count": 3,
+      "divergence_ratio": 0.42857142857142855
     }
   },
   "config.py": {
@@ -212,14 +332,7 @@
       "interface_overlap": 0.5714285714285714,
       "signature_compatibility": [
         {
-          "function": "load_config",
-          "parameter_count_match": true,
-          "return_type_match": false,
-          "s1_params": 1,
-          "soldier_params": 1
-        },
-        {
-          "function": "__init__",
+          "function": "save_config",
           "parameter_count_match": true,
           "return_type_match": true,
           "s1_params": 2,
@@ -233,11 +346,18 @@
           "soldier_params": 2
         },
         {
-          "function": "save_config",
+          "function": "__init__",
           "parameter_count_match": true,
           "return_type_match": true,
           "s1_params": 2,
           "soldier_params": 2
+        },
+        {
+          "function": "load_config",
+          "parameter_count_match": true,
+          "return_type_match": false,
+          "s1_params": 1,
+          "soldier_params": 1
         }
       ]
     },
@@ -247,126 +367,6 @@
         "__post_init__",
         "_apply_env_overrides",
         "_load_config_file"
-      ],
-      "s1_unique_count": 0,
-      "soldier_unique_count": 3,
-      "divergence_ratio": 0.42857142857142855
-    }
-  },
-  "cli.py": {
-    "modules": {
-      "s1": "cli.py",
-      "soldier": "cli.py"
-    },
-    "behavioral_intent_similarity": 0.5714285714285714,
-    "execution_logic_similarity": 1.0,
-    "complexity_comparison": {
-      "s1": {
-        "function_count": 4,
-        "class_count": 1,
-        "conditional_count": 2,
-        "import_count": 5,
-        "state_mutation_count": 4,
-        "cyclomatic_complexity": 3,
-        "coupling_factor": 1.25
-      },
-      "soldier": {
-        "function_count": 7,
-        "class_count": 1,
-        "conditional_count": 2,
-        "import_count": 7,
-        "state_mutation_count": 6,
-        "cyclomatic_complexity": 3,
-        "coupling_factor": 1.0
-      },
-      "complexity_ratio": {
-        "function_count_ratio": 0.5714285714285714,
-        "class_count_ratio": 1.0,
-        "conditional_count_ratio": 1.0,
-        "import_count_ratio": 0.7142857142857143
-      }
-    },
-    "efficiency_analysis": {
-      "s1": {
-        "io_heavy": true,
-        "computation_heavy": false,
-        "network_dependent": false,
-        "file_operations": false,
-        "coupling_factor": 1.25
-      },
-      "soldier": {
-        "io_heavy": true,
-        "computation_heavy": false,
-        "network_dependent": false,
-        "file_operations": false,
-        "coupling_factor": 1.0
-      }
-    },
-    "side_effect_analysis": {
-      "s1": [
-        "object_mutation"
-      ],
-      "soldier": [
-        "object_mutation"
-      ]
-    },
-    "error_handling_comparison": {
-      "s1": {
-        "error_flows": [
-          "try_except:Exception:32"
-        ],
-        "error_coverage": true
-      },
-      "soldier": {
-        "error_flows": [
-          "try_except:KeyboardInterrupt:54",
-          "try_except:Exception:57"
-        ],
-        "error_coverage": true
-      }
-    },
-    "interface_compatibility": {
-      "common_functions": 4,
-      "total_s1_functions": 4,
-      "total_soldier_functions": 7,
-      "interface_overlap": 0.5714285714285714,
-      "signature_compatibility": [
-        {
-          "function": "parse_args",
-          "parameter_count_match": true,
-          "return_type_match": true,
-          "s1_params": 2,
-          "soldier_params": 2
-        },
-        {
-          "function": "__init__",
-          "parameter_count_match": true,
-          "return_type_match": true,
-          "s1_params": 1,
-          "soldier_params": 1
-        },
-        {
-          "function": "main",
-          "parameter_count_match": true,
-          "return_type_match": true,
-          "s1_params": 0,
-          "soldier_params": 0
-        },
-        {
-          "function": "run",
-          "parameter_count_match": true,
-          "return_type_match": true,
-          "s1_params": 2,
-          "soldier_params": 2
-        }
-      ]
-    },
-    "functional_divergence": {
-      "s1_unique_functions": [],
-      "soldier_unique_functions": [
-        "status_command",
-        "stop_command",
-        "start_command"
       ],
       "s1_unique_count": 0,
       "soldier_unique_count": 3,

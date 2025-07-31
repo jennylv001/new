@@ -4,7 +4,7 @@
   "cross_codebase_risks": [
     {
       "type": "naming_conflicts",
-      "description": "Function name conflicts: run, save_config, load_config, main, __init__, parse_args, _parse_config",
+      "description": "Function name conflicts: save_config, _parse_config, run, load_config, main, __init__, parse_args",
       "impact": "Function resolution ambiguity during convergence",
       "mitigation": "Implement namespace prefixing or function renaming"
     },

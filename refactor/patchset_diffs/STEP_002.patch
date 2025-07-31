@@ -1,0 +1,21 @@
+# Patch for STEP_002: Add unique function validate_config to anchor codebase
+# Step type: add
+# Risk level: high
+# Behavioral rationale: Function validate_config provides functionality not present in anchor
+# Target module: utils.py
+# Source codebase: soldier
+
+# This patch represents add operation:
+# - Description: Add unique function validate_config to anchor codebase
+# - Risk Level: high
+# - Estimated Effort: high
+
+# Validation Criteria:
+# - Function validate_config integrates without conflicts
+# - All dependencies are properly imported
+# - Function passes integration tests
+
+# Rollback Procedure:
+# Remove added function validate_config from utils.py
+
+# Dependencies: STEP_001

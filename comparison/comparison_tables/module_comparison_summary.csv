@@ -1,4 +1,4 @@
 module_pair,s1_module,soldier_module,intent_similarity,logic_similarity,interface_overlap,divergence_ratio,s1_functions,soldier_functions,s1_complexity,soldier_complexity
 utils.py,utils.py,utils.py,0.045454545454545456,0.8888888888888888,0.07142857142857142,1.5,9,14,8,9
-config.py,config.py,config.py,0.5714285714285714,0.4,0.5714285714285714,0.42857142857142855,4,7,4,10
 cli.py,cli.py,cli.py,0.5714285714285714,1.0,0.5714285714285714,0.42857142857142855,4,7,3,3
+config.py,config.py,config.py,0.5714285714285714,0.4,0.5714285714285714,0.42857142857142855,4,7,4,10

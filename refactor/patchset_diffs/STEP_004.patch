@@ -1,0 +1,21 @@
+# Patch for STEP_004: Add unique function status_command to anchor codebase
+# Step type: add
+# Risk level: high
+# Behavioral rationale: Function status_command provides functionality not present in anchor
+# Target module: cli.py
+# Source codebase: soldier
+
+# This patch represents add operation:
+# - Description: Add unique function status_command to anchor codebase
+# - Risk Level: high
+# - Estimated Effort: high
+
+# Validation Criteria:
+# - Function status_command integrates without conflicts
+# - All dependencies are properly imported
+# - Function passes integration tests
+
+# Rollback Procedure:
+# Remove added function status_command from cli.py
+
+# Dependencies: STEP_003

@@ -1,0 +1,21 @@
+# Patch for STEP_008: Align function signature for load_config
+# Step type: adapt
+# Risk level: medium
+# Behavioral rationale: Parameter count mismatch (1 vs 1) requires adaptation
+# Target module: config.py
+# Source codebase: soldier
+
+# This patch represents adapt operation:
+# - Description: Align function signature for load_config
+# - Risk Level: medium
+# - Estimated Effort: medium
+
+# Validation Criteria:
+# - Function load_config accepts correct parameter count
+# - All existing tests continue to pass
+# - No breaking changes to public API
+
+# Rollback Procedure:
+# Revert config.py to previous version
+
+# Dependencies: None
